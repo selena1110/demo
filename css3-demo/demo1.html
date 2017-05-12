@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CSS3伪元素</title>
+	<style type="text/css">
+		#div1{
+			width:200px;
+			height:200px;
+			background:#090;
+			color:#fff;
+			font-weight:bold;
+		}
+		#div1::before{
+			content:'这是div前面的内容';
+		}
+		#div1::after{
+			content:'这是div后面的内容';
+			box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+    width: 70%;
+    left: 15%; /* one half of the remaining 30% */
+    height: 100px;
+    bottom: 0;
+		}
+	</style>
+</head>
+<body>
+	<div id="div1">
+		这是一个Div容器
+	</div>
+</body>
+</html>

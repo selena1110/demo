@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>demo2</title>
+	<script type="text/javascript" src="js/browser.min.js"></script>
+	<script type="text/babel">
+		class Human{
+		 constructor(name){
+		 this.name=name;
+		 }
+		 breathe(){
+		 console.log(this.name+" is breathing...");
+		 }
+		}
+		class Max extends Human{
+		constructor(name,sex){
+		
+		super(name),
+		this.sex=sex;
+		}
+		info(){
+		console.log("name:"+this.name+" "+"sex:"+this.sex);
+		}
+		}
+		var man=new Max("selena","男");
+		man.breathe();
+		man.info();
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

@@ -1,0 +1,16 @@
+$(document).ready(function(){
+  $("#bttn").click(function(){
+    $("p").slideToggle("slow");
+  });
+  $("#btn").click(function(){
+  	$("#div2").animate({
+  	  left:'150px',
+  	  opacity:'0.4',
+  	  color:'#fff',
+  	  fontSize:'2.8em'
+  	},5000);
+  });
+  $("#stop").click(function(){
+   $("#div2").stop();
+  });
+});
